@@ -1,0 +1,277 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{03A85FDB-2C88-474A-8D3F-113E2D8531A6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ManagementStudio</RootNamespace>
+    <AssemblyName>Management Studio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>Management Studio.ico</ApplicationIcon>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Infragistics4.Shared.v13.2">
+      <HintPath>ReferenceAssemblies\Infragistics4.Shared.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.UltraWinTabbedMdi.v13.2">
+      <HintPath>ReferenceAssemblies\Infragistics4.Win.UltraWinTabbedMdi.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.2">
+      <HintPath>ReferenceAssemblies\Infragistics4.Win.v13.2.dll</HintPath>
+    </Reference>
+    <Reference Include="Infragistics4.Win.v13.2.Design">
+      <HintPath>ReferenceAssemblies\Infragistics4.Win.v13.2.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Child.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Child.Designer.cs">
+      <DependentUpon>Child.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomExceptionHandler.cs" />
+    <Compile Include="FormBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBase.designer.cs">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\DataSetReader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\DataSetReader.designer.cs">
+      <DependentUpon>DataSetReader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Function\TextToStringBuilder.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\Translation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Function\Translation.designer.cs">
+      <DependentUpon>Translation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\LookupPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\LookupPreview.Designer.cs">
+      <DependentUpon>LookupPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\LookupGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\LookupGenerator.designer.cs">
+      <DependentUpon>LookupGenerator.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Lookup\QueueLookUpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Lookup\QueueLookUpForm.designer.cs">
+      <DependentUpon>QueueLookUpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NewProject.designer.cs">
+      <DependentUpon>NewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OfficeRender\Office2007ColorTable.cs" />
+    <Compile Include="OfficeRender\Office2007Helpers.cs" />
+    <Compile Include="OfficeRender\Office2007Renderer.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Child.resx">
+      <DependentUpon>Child.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\DataSetReader.resx">
+      <DependentUpon>DataSetReader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\Translation.resx">
+      <DependentUpon>Translation.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NewProject.resx">
+      <DependentUpon>NewProject.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Report\ReportDialogGenerator.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Report\ReportPreview.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleProgramInstance.cs" />
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkerThreadBase\CopyFileWorker.cs" />
+    <Compile Include="WorkerThreadBase\CopyInfo.cs" />
+    <Compile Include="WorkerThreadBase\DummyWorker.cs" />
+    <Compile Include="WorkerThreadBase\WorkerThreadBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormBase.resx">
+      <DependentUpon>FormBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Function\TextToStringBuilder.resx">
+      <DependentUpon>TextToStringBuilder.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListItem.xml" />
+    <EmbeddedResource Include="Lookup\LookupPreview.resx">
+      <DependentUpon>LookupPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\LookupGenerator.resx">
+      <DependentUpon>LookupGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Lookup\QueueLookUpForm.resx">
+      <DependentUpon>QueueLookUpForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportDialogGenerator.resx">
+      <DependentUpon>ReportDialogGenerator.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Report\ReportPreview.resx">
+      <DependentUpon>ReportPreview.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Management Studio.ico" />
+    <None Include="Resources\backg.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

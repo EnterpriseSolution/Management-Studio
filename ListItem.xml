@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Items>
+  <Item Index="0" Text="DataSet Reader"  Tag="DataSetReader" ImageIndex="17"></Item>
+  <Item Index="1" Text="Translation"  Tag="Translation" ImageIndex="32"></Item>
+  <Item Index="2" Text="String Builder"  Tag="TextToStringBuilder" ImageIndex="33"></Item>
+  <Item Index="3" Text="License Generator"  Tag="GenLicense" ImageIndex="7"></Item>
+  <Item Index="4" Text="Query Generator"  Tag="QueryGenerator" ImageIndex="34"></Item>
+  <Item Index="5" Text="Lookup Generator"  Tag="LookupGenerator" ImageIndex="35"></Item>
+  <Item Index="6" Text="Report Generator"  Tag="ReportGenerator" ImageIndex="36"></Item>
+  <Item Index="7" Text="Query Lookup"  Tag="QueueLookUpForm" ImageIndex="37"></Item>
+  <Item Index="8" Text="Database Update"  Tag="DatabaseUpdate" ImageIndex="38"></Item>	
+</Items>
+ 
