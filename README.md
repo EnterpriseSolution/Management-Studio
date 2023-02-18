@@ -10,7 +10,7 @@ simple application for build tools or configuration program
 
 ## Screenshots
 
-![Invoice](https://github.com/EnterpriseSolution/Management-Studio/blob/5291614bc4f0ad0141b78e4a03a46daa16a359ce/Resources/Invoice.png) "Invoice")
+![Invoice](https://github.com/EnterpriseSolution/Management-Studio/blob/master/Resources/Invoice.png "Invoice")
 
 
 ## Dependency
