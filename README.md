@@ -17,7 +17,3 @@ simple application for build tools or configuration program
 
 * .NET Framework 4.0
 * Infragistics Windows Forms,UltraWinTabbedMdi
-
-## Links
-
-* **Enterprise Solution**: https://www.cnblogs.com/JamesLi2015/
