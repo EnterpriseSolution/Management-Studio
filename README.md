@@ -8,7 +8,7 @@ simple application for build tools or configuration program
 * plug-in development,marked class with function attribute
 * exception handling 
 
-## Screenshots
+## Screenshot
 
 ![Invoice](https://github.com/EnterpriseSolution/Management-Studio/blob/master/Resources/Invoice.png)
 
